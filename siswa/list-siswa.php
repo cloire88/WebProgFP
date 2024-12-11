@@ -57,8 +57,8 @@
             
             // Actions
             echo "<td>";
-            echo '<a href="form_edit_siswa.php?id=' . $siswa['id'] . '">Edit</a> ';
-            echo '<a href="hapus_siswa.php?id=' . $siswa['id'] . '" onclick="return confirm(\'Yakin ingin menghapus?\')">Hapus</a>';
+            echo '<a href="form-edit-siswa.php?id=' . $siswa['id'] . '">Edit</a> ';
+            echo '<a href="hapus-siswa.php?id=' . $siswa['id'] . '" onclick="return confirm(\'Yakin ingin menghapus?\')">Hapus</a>';
             echo "</td>";
             
             echo "</tr>";

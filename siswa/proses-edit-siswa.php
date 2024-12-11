@@ -2,17 +2,17 @@
 
 include ("../config.php");
 
-if (isset($_POST['daftar'])) {
+if(isset($_POST['simpan'])){
 
+    $id = $_POST['id'];
     $nis = $_POST['nis'];
     $nama = $_POST['nama'];
     $jurusan = $_POST['jurusan'];
     $alamat = $_POST['alamat'];
 
-    // Handle file upload
-    if (isset($_FILES['photo']) && $_FILES['photo']['error'] == UPLOAD_ERR_OK) {
-        $photo_name = $_FILES['photo']['name'];
-        $photo_tmp = $_FILES['photo']['tmp_name'];
+    if (isset($_FILES['image']) && $_FILES['image']['error'] == UPLOAD_ERR_OK) {
+        $photo_name = $_FILES['image']['name'];
+        $photo_tmp = $_FILES['image']['tmp_name'];
 
         // Define upload directory and unique file name
         $upload_dir = __DIR__ . "/uploads/";
@@ -33,18 +33,22 @@ if (isset($_POST['daftar'])) {
         $photo_filename = null; // No photo uploaded
     }
 
-    // Insert data into the database
-    $query = "INSERT INTO siswa (foto, nis, nama, jurusan, alamat) VALUES ('$photo_filename', '$nis', '$nama', '$jurusan', '$alamat')";
-    $insert_data = mysqli_query($db, $query);
+    $update_data = "UPDATE siswa SET foto='$photo_filename', nis ='$nis', nama='$nama', jurusan='$jurusan', alamat='$alamat'  WHERE id=$id";
+    $query = mysqli_query($db, $update_data);
 
-    if ($insert_data) {
-        header('Location: list-siswa.php?status=sukses');
-    } else {
-        error_log("Database error: ");
-        header('Location: list.siswa.php?status=gagal');
+    if($query){
+        header ('Location: list-siswa.php?status=sukses');
     }
-} else {
-    die("akses dilarang");
+    else{
+        header ('Location: list-siswa.php?status=gagal');
+    }
+
+}
+else if(isset($_POST['batal'])){
+    header('Location: list-siswa.php?status=sukses');
+}
+else{
+    die ("akses dilarang");
 }
 
 ?>
