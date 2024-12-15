@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: localhost:3306
--- Generation Time: Dec 11, 2024 at 01:28 PM
+-- Generation Time: Dec 15, 2024 at 02:34 AM
 -- Server version: 8.0.30
 -- PHP Version: 8.1.10
 
@@ -44,8 +44,11 @@ INSERT INTO `siswa` (`id`, `foto`, `nis`, `nama`, `jurusan`, `alamat`) VALUES
 (1, '67597629a5489_download (1).jpeg', 'NS501', 'Adi', 'IPA', 'Jl. Tikus 1'),
 (2, '6759762e39d5c_download (1).jpeg', 'NS501', 'Adi', 'IPA', 'Jl. Tikus 1'),
 (3, '67597643d9998_download (1).jpeg', 'NS501', 'Adi', 'IPA', 'Jl. Tikus 1'),
-(4, '6759769dd0017_download (1).jpeg', 'NS501', 'Adi', 'IPA', 'Jl. Tikus 1'),
-(5, '675976c2dd260_download (1).jpeg', 'NS501', 'Adi', 'IPA', 'Jl. Tikus 1');
+(4, '6759c97f8de01_download.jpeg', 'NS501', 'Adi', 'IPA', 'Jl. Tikus 2'),
+(6, '6759cb50ddcd5_download.png', 'NS503', 'Dia', 'IPA', 'Jl. Ben 2'),
+(7, '', 'NS505', 'Onizuka', 'IPA', 'Jl. Takeru 12'),
+(9, '675c794b59c28_2021-10-17.png', 'NS503', 'Adi', 'IPS', 'Jl. Muda Mudi 32'),
+(10, '', 'NS500', 'Dona', 'IPA', 'Altruis');
 
 --
 -- Indexes for dumped tables
@@ -65,7 +68,7 @@ ALTER TABLE `siswa`
 -- AUTO_INCREMENT for table `siswa`
 --
 ALTER TABLE `siswa`
-  MODIFY `id` int NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=6;
+  MODIFY `id` int NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=11;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
