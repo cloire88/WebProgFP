@@ -9,30 +9,20 @@
                                 Dashboard
                             </a>
                             <hr class="mb-0">
-                            <div class="sb-sidenav-menu-heading">Admin</div>
-                            <a class="nav-link" href="<?= $main_url ?>index.php">
-                                <div class="sb-nav-link-icon"><i class="fa-solid fa-user"></i></div>
-                                Siswa
-                            </a>
-                            <a class="nav-link" href="<?= $main_url ?>index.php">
-                                <div class="sb-nav-link-icon"><i class="fa-solid fa-key"></i></div>
-                                Ganti Password
-                            </a>
-                            <hr class="mb-0">
                             <div class="sb-sidenav-menu-heading">Data</div>
                             <a class="nav-link" href="<?= $main_url ?>/siswa/list-siswa.php"">
                                 <div class="sb-nav-link-icon"><i class="fa-solid fa-users"></i></div>
                                 Siswa
                             </a>
-                            <a class="nav-link" href="<?= $main_url ?>index.php">
+                            <a class="nav-link" href="<?= $main_url ?>/guru/main-guru.php">
                                 <div class="sb-nav-link-icon"><i class="fa-solid fa-user-tie"></i></div>
                                 Guru
                             </a>
-                            <a class="nav-link" href="<?= $main_url ?>index.php">
+                            <a class="nav-link" href="<?= $main_url ?>/mata_pelajaran/mata_pelajaran.php">
                                 <div class="sb-nav-link-icon"><i class="fa-solid fa-book"></i></div>
                                 Mata Pelajaran
                             </a>
-                            <a class="nav-link" href="<?= $main_url ?>index.php">
+                            <a class="nav-link" href="<?= $main_url ?>/report/r-ujian.php">
                                 <div class="sb-nav-link-icon"><i class="fa-solid fa-user-graduate"></i></div>
                                 Ujian 
                             </a>
